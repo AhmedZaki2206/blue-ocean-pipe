@@ -30,5 +30,12 @@ pipeline {
       }
     }
 
+    stage('check ') {
+      steps {
+        echo 'check is done '
+        input(message: 'are u sure ?', ok: 'yes')
+      }
+    }
+
   }
 }
